@@ -7,8 +7,8 @@
 
 ### API
 
-See (API.md)[API.md]
-and (Database.md)[Database.md]
+See [API.md](API.md)
+and [Database.md](Database.md)
 
 ### Installation
 
