@@ -12,6 +12,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - run: |
+          sudo systemctl start mysql
+          mysql -uroot -proot
       - run: npm ci
       - run: npm run lint
       - run: npm test
