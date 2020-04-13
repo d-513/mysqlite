@@ -7,8 +7,8 @@
 
 ### API
 
-See [API.md](docs/API.md)
-and [Database.md](docs/Database.md)
+See [API.md](https://github.com/dada513/mysqlite/blob/master/docs/API.md)
+and [Database.md](https://github.com/dada513/mysqlite/blob/master/docs/Database.md)
 
 ### Installation
 
@@ -57,9 +57,9 @@ const db = new mysqlite.Database("mysql", {
 });
 ```
 
-For a list of available options, see [options.md](docs/options.md)  
+For a list of available options, see [options.md](https://github.com/dada513/mysqlite/blob/master/docs/options.md)  
 Please keep in mind that there may be some statement differences in MySQL and SQLite, but most statements will work the same.
 
 ### Supported node versions
 
-See [node-versions.md](docs/node-versions.md)
+See [node-versions.md](https://github.com/dada513/mysqlite/blob/master/docs/node-versions.md)
