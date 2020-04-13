@@ -8,12 +8,6 @@ on:
 
 jobs:
   build:
-    services:
-      mysql:
-        image: mysql:5.7
-        env:
-          MYSQL_ROOT_PASSWORD: root
-        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=5
     runs-on: ubuntu-latest
 
     strategy:
@@ -26,6 +20,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: mysql -uroot -h127.0.0.1 -proot
     - run: npm ci
     - run: npm run lint
     - run: npm test
