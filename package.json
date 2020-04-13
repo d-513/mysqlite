@@ -1,6 +1,6 @@
 {
   "name": "mysqlite",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A wrapper around mysqljs/mysql and node-sqlite to use the same code for both a mysql and sqlite database.",
   "main": "src/index.js",
   "scripts": {
