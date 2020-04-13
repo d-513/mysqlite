@@ -7,8 +7,8 @@
 
 ### API
 
-See [API.md](API.md)
-and [Database.md](Database.md)
+See [API.md](docs/API.md)
+and [Database.md](docs/Database.md)
 
 ### Installation
 
@@ -57,5 +57,5 @@ const db = new mysqlite.Database("mysql", {
 });
 ```
 
-For a list of available options, see [options.md](options.md)  
+For a list of available options, see [options.md](docs/options.md)  
 Please keep in mind that there may be some statement differences in MySQL and SQLite, but most statements will work the same.
