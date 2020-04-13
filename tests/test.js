@@ -32,12 +32,13 @@ async function sqltest(type, opts) {
   test(await db.all(`SELECT * FROM users`));
   return data;
 }
-sqltest("sqlite", {
+const p1 = sqltest("sqlite", {
   path: "./tests/database.sqlite",
 }).then((data) => logger.info("SQLITE: " + JSON.stringify(data, null, 2)));
-sqltest("mysql", env).then((data) =>
+const p2 = sqltest("mysql", env).then((data) =>
   logger.info("MYSQL: " + JSON.stringify(data, null, 2))
 );
+Promise.all([p1, p2]).then(setTimeout(process.exit, 1000));
 
 process.on("unhandledRejection", (reason) => {
   throw reason; /* rethrow errors so the CI fails if something is not working as expected */
