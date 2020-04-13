@@ -1,0 +1,37 @@
+{
+  "name": "mysqlite",
+  "version": "0.0.1",
+  "description": "A wrapper around mysqljs/mysql and node-sqlite to use the same code for both a mysql and sqlite database.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon tests/test.js --exec \"npm run lint && node\"",
+    "lint": "eslint ./src/",
+    "test": "node tests/test.js"
+  },
+  "keywords": [
+    "mysql",
+    "sqlite"
+  ],
+  "homepage": "https://github.com/dada513/mysqlite#readme",
+  "bugs": {
+    "url": "https://github.com/dada513/mysqlite/issues"
+  },
+  "author": "dada513",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "dada513"
+    }
+  ],
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "sqlite3": "^4.1.1",
+    "sqlstring": "^2.3.1"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "eslint": "^6.8.0",
+    "jsdoc-to-markdown": "^5.0.3",
+    "nodemon": "^2.0.3"
+  }
+}
