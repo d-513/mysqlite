@@ -25,5 +25,5 @@
 `host`: MySQL host  
 `port`: Database port  
 `user`: MySQL user  
-`password`: MySQL user password
+`password`: MySQL user password  
 `database`: The database to use (optional)
